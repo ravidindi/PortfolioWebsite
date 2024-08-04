@@ -106,7 +106,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Sastra Deemed University",
-      logo: require("./assets/images/sastra-logo.png"),
+      logo: require("./assets/images/sastraImage.png"),
       subHeader: "Bachelor of Technology in Computer Science",
       duration: "August 2019 - August 2023",
       desc: "Secured a CGPA of 8.9 / 10.0",
