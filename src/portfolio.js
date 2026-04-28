@@ -4,7 +4,7 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
-import { sassFalse } from "sass";
+import {sassFalse} from "sass";
 
 // Splash Screen
 
@@ -24,7 +24,7 @@ const greeting = {
   username: "Dindi",
   title: "Hi all, I'm Sai Prasanna Kumar",
   subTitle: emoji(
-    "A passionate Full Stack Wizard 🧙‍♂️ with a knack for crafting web apps using Angular 🅰️, React ⚛️, and Spring Boot 🍃, coupled with a flair for integration wizardry with Slack-CLI 💬  and Python sorcery 🐍. Oh, and let's not forget my side hustle as an ML enthusiast, brewing potions of predictive power! 🔮."
+    "A passionate Full Stack Wizard 🧙‍♂️ with a knack for crafting web apps using Angular 🅰️, React ⚛️, and Spring Boot 🍃, coupled with a flair for integration wizardry with Slack-CLI 💬  and Python sorcery 🐍. Oh, and let's not forget my side quest of experimenting with and exploring intelligent agents 🤖, brewing new possibilities through automation and autonomy! ✨"
   ),
   resumeLink:
     "https://drive.google.com/file/d/1e12dtqsPmROb3FTwnamHkapltN8u_C7K/view", // Set to empty to hide the button
@@ -49,9 +49,14 @@ const skillsSection = {
     emoji(
       "⚡ Architect and implement end-to-end solutions, seamlessly bridging front-end experiences with robust back-end systems"
     ),
-    emoji("⚡ Specialize in creating scalable, full-stack applications while mastering the art of system integration for streamlined workflows and enhanced productivity"),
+    emoji(
+      "⚡ Specialize in creating scalable, full-stack applications while mastering the art of system integration for streamlined workflows and enhanced productivity"
+    ),
     emoji(
       "⚡ Integration of third party services such as ServiceNow/ Jira / GCP / RingCentral"
+    ),
+    emoji(
+      "⚡ Building intelligent agentic systems and exploring emerging AI capabilities to create autonomous, adaptive solutions"
     )
   ],
 
@@ -60,16 +65,16 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "Spring Boot",
+      fontAwesomeClassname: "fas fa-seedling"
     },
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
+    },
+    {
+      skillName: "TypeScript",
+      fontAwesomeClassname: "fa-brands fa-typescript"
     },
     {
       skillName: "Java",
@@ -84,7 +89,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "sql-database",
+      skillName: "database",
       fontAwesomeClassname: "fas fa-database"
     },
     {
@@ -126,7 +131,7 @@ const techStack = {
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "80%" //Insert relative proficiency in percentage
+      progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Backend",
@@ -143,28 +148,39 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
+    {
+      role: "Software Engineer 2",
+      company: "Morgan Stanley",
+      companylogo: require("./assets/images/morganStanley.png"),
+      date: "Aug 2025 – Present",
+      desc: "Full-stack engineer in the Sales and Distribution team driving integrations across CRM platforms and enterprise tools, while building agentic AI workflows for business automation.",
+      descBullets: [
+        "Designed human-in-the-loop agentic AI workflows using Spring AI and integrated them with enterprise chatbot systems.",
+        "Built Velocity, an autonomous engineering agent that picks Jira issues, makes code changes, raises PRs, and iteratively fixes CI/CD failures."
+      ]
+    },
     {
       role: "Software Engineer",
       company: "Zoominfo",
       companylogo: require("./assets/images/Zoominfo.webp"),
-      date: "August 2023 – Present",
+      date: "August 2023 – Jun 2025",
       desc: "Integration specialist adept at connecting diverse SaaS applications with enterprise systems, having developed multiple integrations in a team environment linking 20+ platforms including SAP and Coupa.",
       descBullets: [
-        "Spearheaded migration of integrations from Mulesoft to Dell Boomi, single-handedly developing 5 end-to-end integrations and providing critical support for the remaining integrations.",
-        "Engineered multiple Slack-based automations to boost engineer productivity, and worked a chatbot POC leveraging generative AI and RAG technology for enhanced user interaction."
+        "Spearheaded migration of integrations from Mulesoft to Dell Boomi, single-handedly developing 5 end-to-end integrations and providing critical support for remaining integrations.",
+        "Engineered Slack-based automations and built an AI-powered classification tool that reduced research time by 80% and won a hackathon."
       ]
     },
     {
       role: "Software Engineer Intern",
       company: "Morgan Stanley",
       companylogo: require("./assets/images/morganStanley.png"),
-      date: "Jan 2019 – July 2019",
-      desc: "Interned with the Sales and Distribution Team, contributing to the generation of critical revenue and sales performance reports for clients.",
+      date: "Jan 2023 – Jul 2023",
+      desc: "Interned with the Sales and Distribution Team, contributing to revenue and sales reporting solutions.",
       descBullets: [
-        "Developed a full-stack mobile application from end-to-end in Angular using Spring Boot and mongo db  using MongoDB database, currently being used by  4000+ salespersons.",
-        "Earned recognition from global leaders for project presentation at India Technology Meet and clinched 2nd place in the company's MongoDB hackathon."
+        "Developed a full-stack mobile application in Angular/Ionic with Spring Boot and MongoDB, used by 4000+ salespersons.",
+        "Received recognition from global leaders and secured 2nd place in the firm's MongoDB hackathon."
       ]
     }
   ]
@@ -222,30 +238,32 @@ const achievementSection = {
   achievementsCards: [
     {
       title: "Morgan Stanley",
-      subtitle:
-        "Awarded 2nd place in the company's MongoDB hackathon.",
+      subtitle: "Awarded 2nd place in the company's MongoDB hackathon.",
       image: require("./assets/images/morganStanley.png"),
       imageAlt: "Morgan Stanley logo",
       footerLink: [
         {
           name: "Internship Certificate",
           url: "https://drive.google.com/file/d/1uYwAATvthTjL52L12PwWaMtGQYUMdzw6/view?usp=sharing"
-        },
+        }
       ]
     },
     {
       title: "University of Michigan",
-      subtitle: "Completed Certifcation on Programming for Everybody (Getting Started with Python",
+      subtitle:
+        "Completed Certifcation on Programming for Everybody (Getting Started with Python",
       image: require("./assets/images/universityofMichiganLogo.png"),
       imageAlt: "University of Michigan Logo",
       footerLink: [
-        {name: "Certification", url: "https://drive.google.com/file/d/1kBpypp5w-MtEf0wJ8xod92c-GZu6C-S9/view?usp=sharing"},
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1kBpypp5w-MtEf0wJ8xod92c-GZu6C-S9/view?usp=sharing"
+        }
       ]
     },
     {
       title: "Udemy",
-      subtitle:
-        "Completed the course on Docker, React and Next.js",
+      subtitle: "Completed the course on Docker, React and Next.js",
       image: require("./assets/images/udemyLogo.png"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
